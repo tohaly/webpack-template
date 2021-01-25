@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "strictNullChecks": false,
+    "baseUrl": "src",
+    "paths": {
+      "images/*": ["static/images/*"],
+      "utils/": ["utils/*"],
+      "redux-root/*": ["redux/*"],
+      "app-store/*" : ["app/*"],
+      "ui-components": ["components/ui/index"],
+      "components": ["components/index"],
+      "services": ["services/index"]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}

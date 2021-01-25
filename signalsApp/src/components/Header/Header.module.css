@@ -1,0 +1,48 @@
+@value mobile from '../../static/variables/index.module.css';
+
+.header {
+  max-height: 72px;
+  grid-area: topMenu;
+  position: sticky;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  transition: transform 0.4s;
+  z-index: 10;
+}
+
+.headerContainer {
+  background-color: #fff;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerHide {
+  transform: translateY(-150%);
+}
+
+@media screen and (mobile) {
+  .header {
+    max-height: none;
+    position: fixed;
+    top: 58px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(72, 46, 77, 0.8);
+    transition: transform 0.5s, background 1s;
+    z-index: 2;
+  }
+
+  .headerHide {
+    transition: transform 0.5s, background 0.4s;
+    background: none;
+  }
+
+  .headerContainer {
+    flex-direction: column;
+    padding: 0;
+    z-index: 2;
+  }
+}

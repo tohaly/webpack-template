@@ -1,0 +1,10 @@
+.main {
+  grid-area: page;
+  padding: 82px;
+  box-sizing: border-box;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}

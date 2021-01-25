@@ -1,0 +1,50 @@
+.dropAnswer {
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.dropAnswer:last-of-type {
+  margin-bottom: 0;
+}
+
+.button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.25;
+  color: #482e4d;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  outline: none;
+}
+
+.text {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.3333;
+  color: #482e4d;
+  padding: 0 16px 16px;
+  margin: 0;
+  display: none;
+}
+
+.textIsVisible {
+  display: block;
+}
+
+.arrow {
+  object-fit: contain;
+}
+
+.arrowRotate {
+  transform: rotate(180deg);
+}

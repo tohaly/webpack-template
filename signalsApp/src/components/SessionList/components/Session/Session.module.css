@@ -1,0 +1,203 @@
+@value MontserratFont, colorTextLighterGrey, colorTextMainDarkViolet,  NotoSansFont from '../../../../static/variables/index.module.css';
+
+.card {
+  box-sizing: border-box;
+  min-width: 308px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 8px 32px rgba(61, 46, 64, 0.15);
+  border-radius: 4px;
+  padding: 16px 24px 20px;
+  overflow: hidden;
+}
+
+.card:hover .content {
+  max-height: 200px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s;
+}
+
+.header {
+  display: grid;
+  grid-template-areas:
+    'dateContainer img ownerInfo time'
+    'dateContainer img ownerInfo leftTime';
+  grid-template-columns: auto 48px 1fr auto;
+  grid-row-gap: 16px;
+  width: 100%;
+  justify-content: start;
+  margin-bottom: 12px;
+}
+
+.dateContainer {
+  grid-area: dateContainer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.day {
+  font-size: 32px;
+  font-family: MontserratFont;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  color: colorTextLighterGrey;
+  margin: 0;
+}
+
+.month {
+  font-size: 12px;
+  font-family: MontserratFont;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.333;
+  text-transform: uppercase;
+  color: colorTextLighterGrey;
+  margin: 0;
+}
+
+.img {
+  grid-area: img;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.time {
+  grid-area: time;
+  justify-self: end;
+  font-size: 12px;
+  font-family: MontserratFont;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.333;
+  color: colorTextLighterGrey;
+  position: relative;
+  padding-left: 24px;
+}
+
+.time:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 4v4l2.667 1.333m4-1.333A6.667 6.667 0 111.333 8a6.667 6.667 0 0113.334 0z' stroke='%23A293A5' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.ownerInfo {
+  grid-area: ownerInfo;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.name {
+  font-family: MontserratFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.333;
+  color: colorTextMainDarkViolet;
+  margin: 0;
+}
+
+.about {
+  font-family: NotoSansFont;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.333;
+  color: colorTextMainDarkViolet;
+  margin: 0;
+}
+
+.text {
+  font-family: NotoSansFont;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.button {
+  border: none;
+  padding: 16px;
+  text-align: center;
+  font-family: NotoSansFont;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  width: 100%;
+  background: linear-gradient(100.42deg, #8e369d 9.51%, #583765 58.14%, #261e2d 93.9%);
+  position: relative;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.button:after {
+  position: absolute;
+  content: '';
+  left: 5%;
+  width: 90%;
+  height: 15px;
+  top: 80%;
+  background: rgba(63, 40, 80, 0.8);
+  filter: blur(30px);
+  z-index: 0;
+}
+
+.moduleCard {
+  margin-bottom: 16px;
+}
+
+.moduleCard:last-child {
+  margin-bottom: 0;
+}
+
+.moduleCard .header {
+  grid-template-areas:
+    'img ownerInfo ownerInfo dateContainer'
+    'img ownerInfo ownerInfo dateContainer'
+    'time time leftTime leftTime';
+  grid-template-columns: 40px 1fr auto auto auto;
+  grid-row-gap: 16px;
+}
+
+.moduleCard .dateContainer {
+  margin-right: 0;
+}
+
+.moduleCard .img {
+  width: 40px;
+  height: 40px;
+}
+
+.moduleCard .time {
+  justify-self: start;
+}
+
+.moduleCard .name {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 8px;
+}
+
+.moduleCard .about {
+  font-size: 12px;
+  margin-left: 8px;
+  margin-bottom: 20px;
+}

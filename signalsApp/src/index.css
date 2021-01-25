@@ -1,0 +1,9 @@
+@import './static/fonts/index.css';
+
+body {
+  background-color: #eaecf3;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+}

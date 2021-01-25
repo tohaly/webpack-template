@@ -1,0 +1,57 @@
+@value mobile from '../../../static/variables/index.module.css';
+
+.userAccountInfo {
+  display: flex;
+  font-family: 'Noto sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 6px;
+  text-decoration: none;
+}
+
+.userAccountInfo:hover {
+  background-color: #eaecf3;
+}
+
+.avatar {
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+}
+
+.name {
+  margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  color: #482e4d;
+  line-height: 1.5;
+}
+
+.subscription {
+  color: #482e4d;
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.arrow {
+  display: flex;
+}
+
+@media screen and (mobile) {
+  .userAccountInfo {
+    padding: 32px 24px 8px;
+  }
+
+  .info {
+    flex-grow: 1;
+  }
+}

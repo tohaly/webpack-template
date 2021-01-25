@@ -1,0 +1,14 @@
+#signalsApp
+signalsApp/node_modules
+signalsApp/build
+signalsApp/.DS_Store
+signalsApp/.env.local
+signalsApp/.env.development.local
+signalsApp/.env.test.local
+signalsApp/.env.production.local
+signalsApp/npm-debug.log*
+signalsApp/yarn-debug.log*
+signalsApp/yarn-error.log*
+
+#general
+.idea

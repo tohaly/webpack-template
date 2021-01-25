@@ -1,0 +1,25 @@
+@value mobile from '../../static/variables/index.module.css';
+
+.app {
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'aside topMenu'
+    'aside page';
+  grid-template-columns: 160px 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+@media screen and (mobile) {
+  .app {
+    grid-template-areas:
+      'aside'
+      'topMenu'
+      'page';
+    grid-template-columns: 1fr;
+    grid-template-rows: 58px auto 1fr;
+  }
+}

@@ -1,0 +1,34 @@
+@value mobile from '../../static/variables/index.module.css';
+
+.aside {
+  grid-area: aside;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #482e4d;
+  width: 100%;
+  max-width: 160px;
+  max-height: 100vh;
+  padding: 40px 0 0 16px;
+  box-shadow: inset -8px 0 16px #362838;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.logoAside {
+  margin-bottom: 56px;
+}
+
+@media screen and (mobile) {
+  .aside {
+    flex-direction: row;
+    max-width: none;
+    padding: 8px 25px;
+    z-index: 4;
+  }
+
+  .aside .logoAside {
+    display: none;
+  }
+}

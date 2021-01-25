@@ -1,0 +1,29 @@
+@value NotoSansFont, colorTextMainDarkViolet, colorTextLighterGrey, colorWhite, colorLighterViolet from '../../../../static/variables/index.module.css';
+
+.form {
+  display: flex;
+}
+
+.label {
+  font-family: NotoSansFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  padding: 12px 16px;
+  color: colorTextMainDarkViolet;
+  border-radius: 2px;
+  border: 1px solid colorTextLighterGrey;
+  margin-right: 15px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.label:last-of-type {
+  margin-right: 0;
+}
+
+.active {
+  color: colorWhite;
+  background-color: colorLighterViolet;
+  box-shadow: 0 4px 16px rgba(122, 60, 133, 0.37);
+}

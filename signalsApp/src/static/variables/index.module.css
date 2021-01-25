@@ -1,0 +1,15 @@
+/*breakpoints*/
+@value mobile: max-width: 600px;
+
+@value MontserratFont: 'Montserrat', apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu';
+@value NotoSansFont: 'Noto sans', apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu';
+
+/*Colors */
+@value colorWhite: #fff;
+@value colorTextLighterGrey: #a293a5;
+@value colorTextMainDarkViolet: #482E4D;
+@value colorWarnYellow: #FFC123;
+@value colorLighterViolet: #67476c;
+@value colorActiveElement: #7E348A;
+@value colorActiveGreen: #5bbc7c;
+@value colorRejectRed: #ff5c5c;

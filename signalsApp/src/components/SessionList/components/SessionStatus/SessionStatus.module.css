@@ -1,0 +1,26 @@
+@value colorWhite, colorTextMainDarkViolet, colorWarnYellow, colorActiveGreen, colorRejectRed, NotoSansFont from '../../../../static/variables/index.module.css';
+
+.minutes {
+  grid-area: leftTime;
+  padding: 4px 8px;
+  background-color: colorWarnYellow;
+  color: colorTextMainDarkViolet;
+  font-family: NotoSansFont;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  justify-self: end;
+}
+
+.isActive {
+  background-color: colorActiveGreen;
+  color: colorWhite;
+}
+
+.inPause {
+  background-color: colorRejectRed;
+  color: colorWhite;
+}

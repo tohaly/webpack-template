@@ -1,0 +1,4 @@
+@import './roboto/index.css';
+@import './notoSans/index.css'; /*//TODO: Попытаться найти шрифт весом 300*/
+@import './nunito/index.css';
+@import './montserrat/index.css';
