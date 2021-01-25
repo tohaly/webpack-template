@@ -7,7 +7,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const { WebpackOpenBrowser } = require('webpack-open-browser');
 const { TsConfigPathsPlugin } = require('awesome-typescript-loader');
 const minimizeProgressBar = require('./progressBar.config');
-const nets = networkInterfaces();
+// const nets = networkInterfaces();
 
 module.exports = (_, { mode, host, port }) => {
   //File regexp
@@ -18,7 +18,7 @@ module.exports = (_, { mode, host, port }) => {
   const PORT = port || 3000;
   const HOST = host || '0.0.0.0';
   const LOCAL_HOST_ADDRESS = `http://localhost:${PORT}`;
-  const NETWORK_ADDRESS = `http://${nets['wlp4s0'][0]['address']}:${PORT}`;
+  // const NETWORK_ADDRESS = `http://${nets['wlp4s0'][0]['address']}:${PORT}`;
 
   const ENTRY = path.resolve(__dirname, './src/index.tsx');
   const OUTPUT = path.resolve(__dirname, './build');
@@ -82,9 +82,7 @@ module.exports = (_, { mode, host, port }) => {
               loader: 'url-loader',
               options: {
                 limit: 8240,
-                name: '[name].[ext]',
-                outputPath: 'static/images/',
-                publicPath: '../images/',
+                name: 'static/images/[name].[ext]',
               },
             },
           ],

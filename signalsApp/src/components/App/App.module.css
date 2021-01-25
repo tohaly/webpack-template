@@ -11,6 +11,7 @@
   grid-template-columns: 160px 1fr;
   grid-template-rows: auto 1fr;
   min-height: 100vh;
+  background-image: url('../../static/images/tests.png');
 }
 
 @media screen and (mobile) {
