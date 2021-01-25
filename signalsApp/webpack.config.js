@@ -135,10 +135,9 @@ module.exports = (_, { mode, host, port }) => {
         filename: 'static/styles/[name].[hash].css',
       }),
       !isDevelopment && new CleanWebpackPlugin(),
-      minimizeProgressBar(isDevelopment, LOCAL_HOST_ADDRESS, NETWORK_ADDRESS),
+      // minimizeProgressBar(isDevelopment, LOCAL_HOST_ADDRESS, NETWORK_ADDRESS),
       isDevelopment && new WebpackOpenBrowser({ url: LOCAL_HOST_ADDRESS }),
     ].filter(Boolean),
-    stats: 'errors-warnings',
     ...(isDevelopment && { devtool: 'inline-source-map' }),
     devServer: {
       historyApiFallback: true,
@@ -147,7 +146,6 @@ module.exports = (_, { mode, host, port }) => {
       port: PORT,
       host: HOST,
       hot: true,
-      noInfo: true,
     },
   };
 };
